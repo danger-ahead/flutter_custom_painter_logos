@@ -7,15 +7,13 @@ class LG extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomPaint(
-      painter: Logo(context),
+      painter: Logo(),
       size: const Size(150.0, 150.0),
     );
   }
 }
 
 class Logo extends CustomPainter {
-  BuildContext context;
-  Logo(this.context);
   @override
   void paint(Canvas canvas, Size size) {
     final red = Paint()..color = const Color(0xFF990033);

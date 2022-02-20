@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'logos/beats.dart';
 import '/logos/lg.dart';
 import 'logos/gfg.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //all the logos
-    List<Widget> logos = [const LG(), const GFG()];
+    List<Widget> logos = [const LG(), const Beats(), const GFG()];
     return MaterialApp(
       theme: ThemeData.dark().copyWith(
         //the background behind the logo should be white
